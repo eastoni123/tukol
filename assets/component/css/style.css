@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'lemon';
+	src: url('../fonts/LemonMilk.otf');
+	font-weight: normal;
+	font-style: normal;
+}
 #header{
 	background: url(../img/bg-awal.png);
 	background-size:100% 100%;
@@ -12,8 +18,66 @@
 	height: auto;
 	padding: 25px 0px 0px;
 }
+#foto-member{
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	height: 250px;
+	display: inline-block;
+}
+.box-tukang{
+	height: auto;
+	padding: 0px 0px !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: 140% 120% !important;
+	margin-top:2vh;
+	border: 5px solid white;
+	transition-duration: 0.5s;
+	-webkit-transition-duration:0.5s;
+	-moz-transition-duration:0.5s;
+}
+.ireng{
+	position: relative;
+	height: 100%;
+	padding: 3vh 0px !important;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+	transition-duration: 0.5s;
+	-webkit-transition-duration:0.5s;
+	-moz-transition-duration:0.5s;
+	transform: scale(0.4);
+}
+.btn-view{
+	border-radius: 50px;
+	border:1px solid white !important;
+	margin-top: 2vh;
+	transform:translateY(35px);
+	transition-duration: 0.5s;
+	-webkit-transition-duration:0.5s;
+	-moz-transition-duration:0.5s;
+	transition-delay: 0.1s;
+	-webkit-transition-delay:0.1s;
+	-moz-transition-delay:0.1s;
+}
+.box-tukang:hover{
+	background-size: 120% 100% !important;
+}
+.box-tukang:hover .ireng{
+	opacity: 1;
+	transform:scale(1);
+}
+.box-tukang:hover .btn-view{
+	transform:translateY(0px);
+}
 @media only screen and (max-width: 768px){
+	#header{
+		background-size: cover;
+	}
 	#maskot{
 		padding-top: 5vh;
+	}
+	#foto-member{
+		height: 230px;
 	}
 }
