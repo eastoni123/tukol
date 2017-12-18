@@ -19,6 +19,7 @@
 	<script type="text/javascript" src="assets/component/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/component/js/materialize.js"></script>
 	<script type="text/javascript" src="assets/component/js/global.js"></script>
+	<script type="text/javascript" src="assets/component/js/parallax-scroll.js"></script>
 	<script type="text/javascript" src="assets/component/js/wow.min.js"></script>
 	<script>
 		wow = new WOW(
