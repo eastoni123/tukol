@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/component/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/component/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/component/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/component/css/style.css">
 </head>
 <body>
 
@@ -17,6 +18,7 @@
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript" src="assets/component/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/component/js/materialize.js"></script>
+	<script type="text/javascript" src="assets/component/js/global.js"></script>
 	<script type="text/javascript" src="assets/component/js/wow.min.js"></script>
 	<script>
 		wow = new WOW(
