@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/component/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/component/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/component/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/component/css/hover.css">
 	<link rel="stylesheet" type="text/css" href="assets/component/css/style.css">
 </head>
 <body>

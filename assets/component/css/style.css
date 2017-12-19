@@ -4,6 +4,33 @@
 	font-weight: normal;
 	font-style: normal;
 }
+/* label focus color */
+.input-field input[type=text]:focus + label {
+	color: #2196f3 ;
+}
+.input-field input[type=number]:focus + label {
+	color: #2196f3 ;
+}
+.input-field input[type=date]:focus + label {
+	color: #2196f3 ;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #2196f3 ;
+	box-shadow: 0 1px 0 0 #2196f3 ;
+}
+.input-field input[type=number]:focus {
+	border-bottom: 1px solid #2196f3 ;
+	box-shadow: 0 1px 0 0 #2196f3 ;
+}
+.input-field input[type=date]:focus {
+	border-bottom: 1px solid #2196f3 ;
+	box-shadow: 0 1px 0 0 #2196f3 ;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color:#e53935 ;
+}
 #header{
 	background: url(../img/bg-awal.png);
 	background-size:100% 100%;
@@ -70,6 +97,49 @@
 .box-tukang:hover .btn-view{
 	transform:translateY(0px);
 }
+#kotak-akun{
+	position: absolute;
+	z-index: 99;
+	right: 0px;
+	height:auto;
+	width: 400px;
+	padding: 15px 10px;
+}
+#foto-akun{
+	width: 120px;
+	height: 120px;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	border-radius: 100%;
+	left: 10px;
+	border: 2px solid #2196f3;
+}
+.breadcrumb{
+	font-size: 15px !important;
+}
+.box-booking{
+	border-top: 5px solid  #2196f3;
+	padding: 0px 10px !important;
+}
+.kiri{
+	padding: 15px 10px !important;
+	margin-top: -15px;
+	margin-bottom: -15px;
+	border-bottom: 5px solid #2196f3;
+}
+.kanan{
+	padding: 15px 10px !important;
+	margin-top: -15px;
+	margin-bottom: -15px;
+	border-bottom: 5px solid #2196f3;
+}
+.foto-booking-tukang{
+	height: 250px;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
 @media only screen and (max-width: 768px){
 	#header{
 		background-size: cover;
@@ -79,5 +149,13 @@
 	}
 	#foto-member{
 		height: 230px;
+	}
+	.kiri{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.kanan{
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 }

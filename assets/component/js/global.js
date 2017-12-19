@@ -4,7 +4,32 @@ $('ul.tabs').tabs();
 
 // SELECT
 $('select').material_select();
+
+//DATEPICKER
+$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
 });
+});
+// END DOCUMENT FUNCTION
+
+//BOX AKUN
+$('#kotak-akun').hide();
+var down = true;
+$('#btn-akun').click(function(){
+	if (down) {
+		down = false;
+		$('#kotak-akun').fadeIn();
+	}else{
+		down = true;
+		$('#kotak-akun').fadeOut();
+	}
+});
+
+//BACK TO PREVIOUS PAGE
+function goBack() {
+	window.history.back();
+}
 
 // validasi angka huruf
 function getkey(e)
