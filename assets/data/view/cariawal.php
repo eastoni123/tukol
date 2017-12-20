@@ -1,5 +1,6 @@
 <?php 
-include 'header-member.php';
+include 'header-awal.php';
+include '../connection/config.php';
 $sql = "SELECT * FROM tukang";
 $query = mysql_query($sql);
 ?>
@@ -46,7 +47,7 @@ $query = mysql_query($sql);
 		</p>
 		<button type="submit" class="animated zoomIn delay5 waves-effect waves-default col m12 s12 btn blue">Cari<i class="zmdi zmdi-search right"></i></button>
 	</form>
-	<div class="col m10 s12">
+	<div class="col m8 s12">
 		<nav class="wow animated fadeIn delay3">
 			<div class="nav-wrapper">
 				<form>
@@ -60,20 +61,41 @@ $query = mysql_query($sql);
 		<?php while ( $t = mysql_fetch_array($query))
 		{
 			?>
-			<div class="wow animated fadeInUp delay3 col m3 s12 box-tukang z-depth-2" style="background: url(../img/tukang/<?php echo $t['foto_tukang'] ?>)">
+			<div class="wow animated fadeInUp delay3 col m4 s12 box-tukang z-depth-2" style="background: url(../img/tukang/<?php echo $t['foto_tukang'] ?>)">
 				<div class="ireng col m12 s12">
 					<h4 class="col m12 s12 center-align white-text" style="font-family: lemon"><?php echo $t['nama_tukang'] ?></h4>
 					<hr class="col m2 offset-m5 s2 offset-s5">
 					<h6 class="col m12 s12 white-text center-align">Status : <?php echo $t['status'] ?></h6>
-					<button class="waves-effect waves-light btn transparent btn-view col m5 offset-m1 s12">Lihat</button>
-					<a href="booking.php?id=<?php echo $t['id_tukang'] ?>" class="waves-effect waves-light btn transparent btn-view col m5 s12">Booking</a>
+					<button class="waves-effect waves-light btn transparent btn-view col m6 offset-m3 s12">Lihat</button>
 				</div>
 			</div>
 			<?php 
 		}
 		?>
 	</div>
-	
+	<form action="../proccess/login-member.php" method="post" class="col m2 s12 z-depth-2 animated slideInUp white" style="padding: 15px 10px">
+		<h6 class="col m12 s12 grey-text">Anda harus Masuk sebagai member untuk Booking</h6>
+		<hr class="col m6 s12">
+		<div class="input-field col m12 s12">
+			<input id="email" type="email" name="email" class="validate">
+			<label for="email" data-error="E-mail harus mengandung '@' ya 😊" data-success="Valid">E-mail &nbsp;<i class="zmdi zmdi-email"></i></label>
+		</div>
+		<div class="input-field col m12 s12">
+			<input id="pass" type="password" name="password" class="validate">
+			<label for="pass">Password &nbsp;<i class="zmdi zmdi-lock"></i></label>
+		</div>
+		<button type="submit" name="login" class="waves-effect btn blue col m12 s12">Masuk <i class="zmdi zmdi-mail-send right"></i></button>
+		<h6 class="col m12 s12">Belum punya Akun ? <a href="reg-member.php">Daftar</a></h6>
+	</form>
+	<ul class="pagination col m4 offset-m3 s12">
+		<li class="disabled"><a href="#!"><i class="zmdi zmdi-chevron-left"></i></a></li>
+		<li class="active blue"><a href="#!">1</a></li>
+		<li class="waves-effect"><a href="#!">2</a></li>
+		<li class="waves-effect"><a href="#!">3</a></li>
+		<li class="waves-effect"><a href="#!">4</a></li>
+		<li class="waves-effect"><a href="#!">5</a></li>
+		<li class="waves-effect"><a href="#!"><i class="zmdi zmdi-chevron-right"></i></a></li>
+	</ul>
 </div>
 <?php 
 include 'footer-member.php';

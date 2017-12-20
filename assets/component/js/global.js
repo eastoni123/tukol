@@ -10,6 +10,12 @@ $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
 });
+// PARTICLES
+$('#particles').particleground({
+	dotColor: 'rgba(0,0,0,0.2)',
+	lineColor: 'rgba(0,0,0,0.2)'
+});
+
 });
 // END DOCUMENT FUNCTION
 
