@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="Aplikasi Booking Tukang">
 	<meta name="author" content="Bagus Aditama | Siti Musdalifa | Muhammad Eastoni Maulana">
-	<title>Cari Tukang</title>
+	<title>Tukang Online</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="../../component/css/materialize.min.css">

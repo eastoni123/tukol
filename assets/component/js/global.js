@@ -10,15 +10,26 @@ $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
 });
-// PARTICLES
-$('#particles').particleground({
-	dotColor: 'rgba(0,0,0,0.2)',
-	lineColor: 'rgba(0,0,0,0.2)'
-});
 
 });
 // END DOCUMENT FUNCTION
 
+// VALIDATE FORM
+function validateForm() {
+	var a = document.forms["form-daftar"]["nama"].value;
+	var b = document.forms["form-daftar"]["email"].value;
+	var c = document.forms["form-daftar"]["password"].value;
+	var d = document.forms["form-daftar"]["no_telp"].value;
+	var e = document.forms["form-daftar"]["alamat"].value;
+	var f = document.forms["form-daftar"]["file"].value;
+	var g = document.forms["form-daftar"]["jkel"].value;
+	var h = document.forms["form-daftar"]["no_telp"].value;
+	var i = document.forms["form-daftar"]["file"].value;
+	if (a==null || a=="" || b==null || b==""|| c==null || c=="" || d==null || d=="" || e==null || e==""|| f==null || f=="" || g==null || g==""|| h==null || h=="" || i==null || i=="") {
+		Materialize.toast('Form tidak boleh kosong ya 😊', 2000);
+		return false;
+	}
+}
 //BOX AKUN
 $('#kotak-akun').hide();
 var down = true;
