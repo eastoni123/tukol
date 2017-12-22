@@ -5,6 +5,9 @@ $('ul.tabs').tabs();
 // SELECT
 $('select').material_select();
 
+//SIDENAV
+$(".button-collapse").sideNav();
+
 //DATEPICKER
 $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month

@@ -2,7 +2,9 @@
 include 'header-awal.php';
 ?>
 <div class="row">
-	<form method="post" action="../proccess/reg-member.php" enctype="multipart/form-data" onsubmit="return validateForm()" name="form-daftar" class="white col m4 offset-m4 s12 z-depth-2" style="padding: 5px 5px;">
+	<form method="post" action="../proccess/reg-member.php" enctype="multipart/form-data" onsubmit="return validateForm()" name="form-daftar" class="animated fadeInUp white col m4 offset-m4 s12 z-depth-2" style="padding: 15px 10px;margin-top: 50px;">
+		<h6 class="col m12 s12 grey-text center-align">Pendaftaran Member Tukang Online</h6>
+		<hr class="col m4 offset-m4 s12">
 		<div class="input-field col s12 m12">
 			<input id="email" name="email" type="email" data-error="E-mail harus mengandung '@' ya 😊" data-success="Valid" class="validate">
 			<label for="email">Email &nbsp;<i class="zmdi zmdi-email"></i></label>
