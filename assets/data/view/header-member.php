@@ -32,7 +32,7 @@ if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li class="hvr-underline-from-left"><a href="caritukang.php">Cari Tukang</a></li>
 				<li class="hvr-underline-from-left"><a href="badges.html">Riwayat Pembookingan</a></li>
-				<li class="hvr-buzz infinite button-collapse"><a><i class="zmdi zmdi-notifications"></i></a></li>
+				<li class="hvr-buzz infinite button-collapse" data-activates="notif"><a><i class="zmdi zmdi-notifications"></i></a></li>
 				<li id="btn-akun">
 					<a>
 						<div class="chip blue darken-2 white-text">
